@@ -1,0 +1,379 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} 
+body{
+    background: #c5c5c5;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    border-radius: 15px;
+    box-sizing: content-box;
+    padding: 20px;
+    margin: 0px;
+    background: url(Rlogo.jpg);
+    /*background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));*/
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+nav{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+   
+
+}
+.rlog{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-list{
+    display: inline-block;
+    flex: -1;
+    align-items: center;
+    margin-right: 20px;
+}
+.nav-list .menu-img{
+    display: flex;
+    flex: 2;
+
+    width: 3rem;
+    
+    background: #fff;
+    padding: 2px;
+    
+}
+.menu-img{
+    margin-right: 8px;
+}
+input[type=checkbox],label{
+    display: none;
+}
+.nav-list ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+
+}
+.nav-list ul li a{
+    text-decoration: none;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #ffff;
+
+}
+.nav-list ul li::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   display: block;
+   background: orangered;
+   margin: auto;
+   
+}
+.nav-list ul li:hover::after{
+    width: 100%;
+    transition: 1s;
+}
+.text-box{
+    position: absolute;
+    width: 80%;
+    align-items: center;
+    justify-content: center ;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 64px;
+    justify-content: space-between;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 15px;
+    color: #fff;
+}
+.hero-btn{
+   position: relative;
+   display: inline-block;
+   text-decoration: none;
+   background: transparent;
+   color: #fff;
+   border: 2px solid #fff;
+   padding: 12px 34px;
+   font-size: 13px;
+   transition: 1s;
+   cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+svg{
+    position: absolute;
+    color: #fff;
+}
+.course{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 30px;
+    width: 80%;
+    
+}
+.course h1{
+    font-size: 32px;
+    font-weight: 600px;
+    margin-top: 40px;
+}
+.course p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300px;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    display: bolck;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.8);
+}
+.campus{
+    position: relative;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+.campus-col img{
+    height: 500px;
+    display: block;
+}
+.layer1{
+   background: transparent;
+   flex-basis: 32%;
+   width: 32%;
+   height: 500px;
+   position: absolute;
+   border-radius: 10px;
+   top: 20%;
+   left: 0%;
+   transition: 0.5s;
+   
+
+}
+.layer1:hover{
+    background: rgba(226, 0,0,0.7);
+}
+.layer2, .layer3{
+    background: transparent;
+    flex-basis: 32%;
+    width: 32%;
+    height: 500px;
+    position: absolute;
+    border-radius: 10px;
+    top: 20%;
+    transition: 0.5s;
+    
+ 
+ }
+ .layer2:hover{
+     background: rgba(226, 0,0,0.7);
+ }
+ .layer3:hover{
+    background: rgba(226, 0,0,0.7);
+}
+.layer1 h3{
+    width: 100%;
+    font-weight: 500; 
+    color:#fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer1:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.layer2 h3{
+    width: 100%;
+    font-weight: 500; 
+    color:#fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer2:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.layer3 h3{
+    width: 100%;
+    font-weight: 500; 
+    color:#fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer3:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+.facilities-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.testimonial-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #fff3f3;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+
+
+
+}
+.testimonial-col img{
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 30px;
+}
+.testimonial-col p{
+    padding: 0;
+}
+
+@media screen and (max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+        justify-content: space-between;
+    }
+    .nav-list ul li{
+        display: none;
+        background: #777;
+        
+    }
+    .nav-list {
+        position: absolute;
+        background: transparent;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -2em;
+        text-align: left;
+        z-index: 2;
+    }
+   
+    label{
+        display: flex ;
+        justify-content: end;
+        
+        margin: 40px;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+
+    }
+    .nav-list ul{
+        padding: 30px;
+    } 
+    .row{
+       flex-direction: column;
+    }
+    .layer1{
+        background: transparent;
+        flex-basis: 32%;
+        flex-direction: column;
+        display: block;
+        width: fit-content;
+        height: fit-content;
+        position: relative;
+        border-radius: 10px;
+        top: 0;
+        left: 0%;
+        transition: 0.5s;
+        
+     
+     }
+     .layer1:hover{
+         background: rgba(226, 0,0,0.7);
+     }
+     .layer1 h3{
+        width: 100%;
+        font-weight: 500; 
+        color:#fff;
+        font-size: 26px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .layer1:hover h3{
+        bottom: 49%;
+        opacity: 1;
+        flex-direction: column;
+    }
+}
